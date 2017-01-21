@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Технология AJAX</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body class="body">
+
+    <div class="block">
+        <form class="form" method="post" enctype="application/x-www-form-urlencoded" data-role="json-request-form">
+            <input class="form__input email" placeholder="E-mail" type="email" name="email" value="" data-role="json-request-form-login">
+            <input class="form__input password" placeholder="Password" type="password" name="password" value="" data-role="json-request-form-password">
+            <button class="button button_in" type="submit" data-role="json-request-form-submit">Sign in</button>
+            <span data-role="json-request-preloader"></span>
+            <div data-role="json-request-error"></div>
+        </form>
+    </div>
+
+    <div class="inform" data-role="json-request-user-profile">
+        <img class="inform__img" alt="" data-role="json-request-user-profile-avatar">
+        <span class="inform__text inform_name" data-role="json-request-user-profile-fullname"></span>
+        <span class="inform__text inform_country" data-role="json-request-user-profile-country"></span>
+        <span class="inform__text inform_hobbies" data-role="json-request-user-profile-hobbies"></span>
+        <button class="button button_out" data-role="json-request-user-profile-logout">Sign out</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
