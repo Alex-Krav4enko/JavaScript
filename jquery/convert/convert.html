@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+	<title>Convert</title>
+
+	<script src="js/jquery-3.1.1.js" defer></script>
+
+	<script src="js/index.js" defer></script>
+
+	<style>
+		.form__block {
+			margin: 10px;
+			position: relative;
+		}
+
+		.form__list {
+			display: none;
+			position: absolute;
+			list-style: none;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			width: 50px;
+			padding: 0;
+			margin: 0;
+			left: 0;
+			top: 20px;
+			z-index: 99;
+		}
+
+		.form__item:hover {
+			background-color: #eee;
+			cursor: pointer;
+		}
+
+		.form__input {
+			width: 50px;
+			height: 15px;
+		}
+
+		.form__current {
+			display: inline-block;
+			width: 50px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body class="body">
+	<form class="form">
+		<div class="form__block">
+			<div class="form__current">USD</div>
+			<ul class="form__list"></ul>
+			<input class="form__input" type="text">
+		</div>
+
+		<div class="form__block">
+			<div class="form__current">RUB</div>
+			<ul class="form__list"></ul>
+			<input class="form__input" type="text">
+		</div>
+	</form>
+</body>
+
+</html>
