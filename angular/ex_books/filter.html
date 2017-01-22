@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="BookApp">
+
+<head>
+    <meta charset="utf-8">
+    <title>AngularJS</title>
+    <script src="angular.js"></script>
+</head>
+
+<body ng-controller="BookListCtrl">
+
+    Найти:
+    <input ng-model="query"><br><br> Сортировать по:
+    <select ng-model="myOrderProperty">
+            <option value="price">Цена</option>
+			<option value="name">Название</option>
+            <option value="pages">Количество страниц</option>
+        </select>
+
+    <ul>
+        <li ng-repeat="book in books | filter:query | orderBy:myOrderProperty">
+            <h3>{{book.name | uppercase}}</h3>
+            <p>{{book.author}}</p>
+            <p>Страниц: {{book.pages}}, цена: {{book.price}}, жанр: {{book.genre}}
+            </p>
+        </li>
+    </ul>
+
+    <p ng-show="query">
+        Выведены книги, содержащие {{query}}
+    </p>
+
+    <script src="app.js"></script>
+    <script src="controllers.js"></script>
+
+</body>
+
+</html>
