@@ -1,0 +1,59 @@
+.carousel {
+  position: relative;
+  background-color: #eee;
+  width: 460px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.carousel img {
+  width: 150px;
+  height: 150px;
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  top: 84px;
+  height: 30px;
+  width: 30px;
+  background-color: green;
+  border-radius: 15px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 28px;
+  text-align: center;
+  display: block;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.prevArr {
+  left: 7px;
+}
+
+.nextArr {
+  right: 7px;
+}
+
+.gallery {
+  background-color: green;
+  width: 458px;
+  overflow: hidden;
+}
+
+.images {
+  list-style: none;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  height: 150px;
+  transition: margin-left 250ms;
+}
+
+.images > li {
+  display: inline-block;
+}
