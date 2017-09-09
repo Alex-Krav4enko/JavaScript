@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calulate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calc">
+    <div class="calc__title">Калькулятор</div>
+    <form action="/" name="calc" class="form">
+      <div class="calc__row">
+        <label class="form__label">A = <input class="form__input" name="summA" type="text" placeholder="0"></label>
+        <label class="form__label">B = <input class="form__input" name="summB" type="text" placeholder="0"></label>
+      </div>
+
+      <div class="calc__row">
+        <label for="operation" class="form__label">Операция = </label>
+        <select id="operation" name="operation">
+          <option value="0" selected>+</option>
+          <option value="1">*</option>
+        </select>
+      </div>
+
+      <div class="calc__row">
+        <label class="form__label">A + B = <input class="form__input" name="result" type="text" placeholder="0"></label>
+      </div>
+    </form>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
